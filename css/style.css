@@ -291,6 +291,7 @@ span{
 }
 
 .portfolio-box img{
+    height: 27em;
     width: 100%;
     transition: .5s ease;
 }
@@ -347,19 +348,15 @@ span{
     color: var(--second-bg-color);
 }
 
-.contact{
-    background-color: var(--bg-color);
-}
-
 .contact h2{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .contact form{
-    max-width: 6oem;
+    max-width: 70em;
     margin: 1em auto;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
 }
 
 .contact form .input-box{
@@ -370,25 +367,25 @@ span{
 
 .contact form .input-box input,
 .contact form textarea{
-    width: 100%;
-    padding: 1em;
-    font-size: 1.3em;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .8em;
-    margin: .5em 0;
+   width: 100%;
+   padding: 1.5em;
+   font-size: 1.5em;
+   color: var(--text-color);
+   background-color: var(--second-bg-color);
+   border-radius: .8em;
+   margin: .7em 0; 
 }
 
 .contact form .input-box input{
     width: 49%;
 }
 
-.contact textarea{
+.contact form textarea{
     resize: none;
 }
 
 .contact form .btn{
-    margin: 2em;
+    margin-top: 2em;
     cursor: pointer;
 }
 

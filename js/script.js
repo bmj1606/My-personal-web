@@ -58,3 +58,27 @@ ScrollReveal({
         backDelay:1000,
         loop:true
     });
+
+
+    const form = document.querySelector('form');
+    const fullName = document.getElementById("contact")
+    
+    function sendEmail() {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "michaelboluwatife826@gmail.com",
+            Password : "D40B327412E6145D28DD18541EF6B9651564",
+            To : 'michaelboluwatife826@gmail.com',
+            From : "michaelboluwatife826@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+
+    form.addEventListener( "submit", (e) => {
+        e.preventDefault();
+
+        sendEmail();
+    });
